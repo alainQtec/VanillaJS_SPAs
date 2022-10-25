@@ -1,0 +1,30 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "Single page apps no frameworks",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alainQtec/VanillaJS_SPAs.git"
+  },
+  "keywords": [
+    "javascript",
+    "spa",
+    "express"
+  ],
+  "author": "alainQtec.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alainQtec/VanillaJS_SPAs/issues"
+  },
+  "homepage": "https://github.com/alainQtec/VanillaJS_SPAs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

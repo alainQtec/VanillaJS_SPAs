@@ -1,2 +1,2 @@
-# VanillaJS_SPAs
+# SPAs
  Creating Single Page apps with no frameworks

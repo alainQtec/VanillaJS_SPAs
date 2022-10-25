@@ -1,10 +1,11 @@
+import DashBoard from "./views/DashBoard";
+
 const router = async () => {
   const routes = [
-    { path: "/", view: () => console.log(`viewing dashboard`) },
+    { path: "/", view: () => DashBoard },
     { path: "/posts", view: () => console.log(`viewing Posts`) },
     { path: "/settings", view: () => console.log(`viewing settings`) },
   ];
-  // Test Each route for Potential match
   const potentialMatches = routes.map((route) => {
     return {
       route: route,
@@ -18,8 +19,24 @@ const router = async () => {
       isMatch: true,
     };
   }
-  console.log(match);
+  const view = new match.route.view();
+  document.querySelector("#app").innerHTML = await view.getHtml();
+
+  console.log(match.route.view());
 };
+
+function navigateTo(url) {
+  history.pushState(null, null, url);
+  router();
+}
+
+window.addEventListener("popstate", router);
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.addEventListener("click", (e) => {
+    if (e.target.matches("[data-link]")) {
+      e.preventDefault();
+      navigateTo(e.target.href);
+    }
+  });
   router();
 });

@@ -4,15 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Single Page App</title>
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>Learning | Html and CSS</title>
   </head>
   <body>
-    <nav class="nav">
-      <a href="/" class="nav__link" data-link="">Dashboard</a>
-      <a href="/posts" class="nav__link" data-link>Posts</a>
-      <a href="/settings" class="nav__link" data-link>Settings</a>
-    </nav>
-    <div id="app"></div>
-    <script type="module" src="/static/js/index.js"></script>
+    <header>
+      <nav>
+        <ul class="nav_items">
+          <li class="nav_item">Home</li>
+          <li class="nav_item">Gallery</li>
+          <li class="nav_item">
+            <h1 class="logo_text">Flourish Collective</h1>
+          </li>
+          <li class="nav_item">Contact</li>
+          <li class="nav_item">About</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <section class="heroSection">
+        <h2>Want to turn your Passion into a profitable, Creative Business?</h2>
+        <button type="submit">Enroll to the Course</button>
+      </section>
+      <section class="introSection">
+        <img src="assets/images/cat.jpg" alt="intro_Image" srcset="" />
+        <div class="introContent"></div>
+      </section>
+      <section class="gallerySection"></section>
+      <section class="testimonialSection">
+        <h1>This is the Plotting Section</h1>
+      </section>
+    </div>
   </body>
 </html>

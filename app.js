@@ -1,6 +1,10 @@
 import express from "express";
 import path from "path";
 import routes from "./frontend/assets/js/routes.js";
+if (process.browser) {
+  console.log(process.browser && window.location.pathname);
+}
+return;
 
 const port = process.env.PORT || 5000;
 function route(event = window.event) {

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/",
+    "title": "Home",
+    "Description": "This is The home View"
+  },
+  {
+    "path": "/dasboard",
+    "title": "Dashboard",
+    "Description": "This is The dashboard view"
+  },
+  {
+    "path": "/contact",
+    "title": "Contact",
+    "Description": "This is The contact View"
+  },
+  {
+    "path": "/settings",
+    "title": "Settings",
+    "Description": "This is the Settings View"
+  }
+]

@@ -52,6 +52,7 @@ nav,
 
 .nav_item:hover {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .container {
@@ -69,7 +70,7 @@ section {
 }
 
 .heroSection {
-  background-image: url("/assets/images/build-a-web-design-business.jpg");
+  background-image: url("/frontend/assets/images/build-a-web-design-business.jpg");
   background-repeat: no-repeat;
   background-clip: padding-box;
   background-position: center;

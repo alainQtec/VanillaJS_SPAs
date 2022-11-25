@@ -9,6 +9,7 @@ const introContent = document.querySelector(".introContent");
     Functions
    ___________
 */
+// const catFacts = fetch("https://catfact.ninja/fact");
 function createGallery() {
   var items = ["box1", "box2", "box3", "box4", "box5", "box6", "box7"]; // can be Images or anything ...
   var galleryContainer = document.createElement("div");

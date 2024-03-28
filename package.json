@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/alainQtec/VanillaJS_SPAs#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.19.2"
   }
 }
